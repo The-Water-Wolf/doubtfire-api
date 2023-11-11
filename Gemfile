@@ -17,7 +17,7 @@ group :development, :test do
   gem "sprockets-rails"
   gem 'better_errors'
   gem 'byebug'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.0.2'
   gem 'rails_best_practices'
   gem 'rubocop'
   gem 'rubocop-faker'
@@ -48,7 +48,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'hirb'
 
 # Authentication
-gem 'devise'
+gem 'devise', '>= 4.9.0'
 gem 'devise_ldap_authenticatable'
 gem 'json-jwt'
 gem 'ruby-saml', '~> 1.13.0'
