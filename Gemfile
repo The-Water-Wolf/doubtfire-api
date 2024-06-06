@@ -14,7 +14,7 @@ ruby ruby_versions[(ENV['RAILS_ENV'] || 'development').to_sym]
 gem 'rails', '~>7.0.0'
 
 group :development, :test do
-  gem "sprockets-rails"
+  gem "sprockets-rails", ">= 3.5.0"
   gem 'better_errors'
   gem 'byebug'
   gem 'database_cleaner'
