@@ -19,9 +19,9 @@ group :development, :test do
   gem 'byebug'
   gem 'database_cleaner'
   gem 'rails_best_practices'
-  gem 'rubocop'
+  gem 'rubocop', '>= 1.30.1'
   gem 'rubocop-faker'
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', '>= 2.15.0'
   gem 'simplecov', require: false
   gem 'listen'
 end
@@ -33,7 +33,7 @@ group :development, :test, :staging do
   gem 'faker'
   gem 'minitest'
   gem 'minitest-around'
-  gem 'webmock'
+  gem 'webmock', '>= 3.15.1'
 end
 
 # Database
@@ -51,7 +51,7 @@ gem 'hirb'
 gem 'devise'
 gem 'devise_ldap_authenticatable'
 gem 'json-jwt'
-gem 'ruby-saml', '~> 1.13.0'
+gem 'ruby-saml', '~> 1.14.0'
 
 # Student submission
 gem 'coderay'
