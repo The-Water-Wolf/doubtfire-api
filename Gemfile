@@ -21,7 +21,7 @@ group :development, :test do
   gem 'rails_best_practices'
   gem 'rubocop'
   gem 'rubocop-faker'
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', '>= 2.30.0'
   gem 'simplecov', require: false
   gem 'listen'
 end
@@ -66,7 +66,7 @@ gem 'moss_ruby', '>= 1.1.4'
 gem 'rails-latex', '>2.3'
 
 # API
-gem 'grape'
+gem 'grape', '>= 2.1.0'
 gem 'grape-entity'
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
