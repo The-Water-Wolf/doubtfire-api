@@ -11,10 +11,10 @@ ruby_versions = {
 ruby ruby_versions[(ENV['RAILS_ENV'] || 'development').to_sym]
 
 # The venerable, almighty Rails
-gem 'rails', '~>7.0.0'
+gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
 group :development, :test do
-  gem "sprockets-rails"
+  gem "sprockets-rails", ">= 3.5.0"
   gem 'better_errors'
   gem 'byebug'
   gem 'database_cleaner'
@@ -29,7 +29,7 @@ end
 group :development, :test, :staging do
   # Generators for population
   gem 'factory_bot'
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.3.0'
   gem 'faker'
   gem 'minitest'
   gem 'minitest-around'
@@ -48,10 +48,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'hirb'
 
 # Authentication
-gem 'devise'
+gem 'devise', '>= 4.9.0'
 gem 'devise_ldap_authenticatable'
 gem 'json-jwt'
-gem 'ruby-saml', '~> 1.13.0'
+gem 'ruby-saml', '~> 1.14.0'
 
 # Student submission
 gem 'coderay'
@@ -63,23 +63,23 @@ gem 'rubyzip'
 gem 'moss_ruby', '>= 1.1.4'
 
 # Latex
-gem 'rails-latex', '>2.3'
+gem 'rails-latex', '>= 2.3.5'
 
 # API
 gem 'grape'
 gem 'grape-entity'
 gem 'grape-swagger'
-gem 'grape-swagger-rails'
+gem 'grape-swagger-rails', '>= 0.4.0'
 
 # Miscellaneous
 gem 'ci_reporter'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.8.0'
 gem 'rack-cors', require: 'rack/cors'
 gem 'require_all', '>=1.3.3'
 gem 'bunny-pub-sub', '0.5.2'
 
 # Excel support
-gem 'roo', '~> 2.7.0'
+gem 'roo', '~> 2.8.0'
 gem 'roo-xls'
 
 # webcal generation
