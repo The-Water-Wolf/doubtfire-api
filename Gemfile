@@ -11,13 +11,13 @@ ruby_versions = {
 ruby ruby_versions[(ENV['RAILS_ENV'] || 'development').to_sym]
 
 # The venerable, almighty Rails
-gem 'rails', '~>7.0.0'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 
 group :development, :test do
   gem "sprockets-rails"
   gem 'better_errors'
   gem 'byebug'
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.0.2'
   gem 'rails_best_practices'
   gem 'rubocop'
   gem 'rubocop-faker'
@@ -63,7 +63,7 @@ gem 'rubyzip'
 gem 'moss_ruby', '>= 1.1.4'
 
 # Latex
-gem 'rails-latex', '>2.3'
+gem 'rails-latex', '>= 2.3.5'
 
 # API
 gem 'grape'
