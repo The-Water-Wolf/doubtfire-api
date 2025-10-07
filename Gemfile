@@ -19,9 +19,9 @@ group :development, :test do
   gem 'byebug'
   gem 'database_cleaner'
   gem 'rails_best_practices'
-  gem 'rubocop'
-  gem 'rubocop-faker'
-  gem 'rubocop-rails'
+  gem 'rubocop', '>= 1.66.0'
+  gem 'rubocop-faker', '>= 1.2.0'
+  gem 'rubocop-rails', '>= 2.15.0'
   gem 'simplecov', require: false
   gem 'listen'
 end
