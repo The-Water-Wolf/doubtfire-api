@@ -80,7 +80,7 @@ gem 'bunny-pub-sub', '0.5.2'
 
 # Excel support
 gem 'roo', '~> 2.7.0'
-gem 'roo-xls'
+gem 'roo-xls', '>= 2.0.0'
 
 # webcal generation
 gem 'icalendar', '~> 2.5', '>= 2.5.3'
